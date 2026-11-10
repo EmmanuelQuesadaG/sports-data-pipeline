@@ -17,3 +17,11 @@ uv handles the Python version, virtual environment, dependencies and lockfile in
 ## 004. src layout
 
 Package code lives in `src/sports_data_pipeline/`, so tests always run against the installed package and not against whatever is in the working directory.
+
+## 005. PostgreSQL in Docker
+
+The database runs as a container defined in `docker-compose.yml`, so the environment is identical on any machine and nothing is installed on the host system.
+
+## 006. Secrets in .env
+
+Credentials live in `.env`, wich is git-ignored. The repository only contains `.env.example` as a template.

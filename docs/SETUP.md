@@ -22,3 +22,10 @@ Verify with `git config --global --list`.
     uv sync
 
 `uv init --lib` creates `pyproject.toml`, `.python-version` and a `src/` layout. `uv sync` creates the virtual environment (`.venv`) and the lockfile (`uv.lock`).
+## 4. PostgreSQL (Docker)
+
+      cp .env.example .env   # then set a real password in .env
+      docker compose up -d
+      docker compose ps
+
+Requires Docker and Compose. Postgres listens on `127.0.0.1:5432~ only. Data persists in the `pgdata` volume.
