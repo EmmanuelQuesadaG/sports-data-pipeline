@@ -25,3 +25,7 @@ The database runs as a container defined in `docker-compose.yml`, so the environ
 ## 006. Secrets in .env
 
 Credentials live in `.env`, wich is git-ignored. The repository only contains `.env.example` as a template.
+
+## 007. psycopg 3 as the PostgreSQL driver
+
+psycopg 3 is the current official driver for PostgreSQL in Python. Connection settings come from environment variables (loaded from `.env` with python-dotenv), so no credentials appear in the code.
