@@ -18,13 +18,6 @@ Verify with `git config --global --list`.
 
 ## 3. Python project (uv)
 
-      uv init --lib --python 3.13
-      uv sync
-'uv init --lib`
-cat >> docs/SETUP.md << 'EOF'
-
-## 3. Python project (uv)
-
     uv init --lib --python 3.13
     uv sync
 
